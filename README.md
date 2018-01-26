@@ -1,6 +1,6 @@
 ---
 author:
-- |
+...
     *Mario Parreño Lara*\
     Universidad Politécnica de Valencia
 ...
@@ -19,13 +19,15 @@ agente capaz de interactuar con las personas para proporcionarles
 información sobre recetas como veremos en el siguiente documento, cómo
 de interactuar mediante distintas plataformas con clientes de grandes
 empresas y así hacer los servicios de atención al cliente mucho más
-accesibles y rápidos.\
+accesibles y rápidos.
+
 Para que la realización de nuestro *bot* sea sencilla y rápida,
 emplearemos una herramienta de Google: DialogFlow. Esta nos permite
 crear bots que, configurados y entrenados correctamente, son capaces de
 mantener conversaciones más o menos complejas utilizando lenguaje
 natural, con el usuario con el que interactua o podríamos decir,
-diáloga.\
+diáloga.
+
 Por otra parte controlaremos la lógica de interacción entre el bot y el
 usuario mediante Python donde, como veremos más adelante, la entrada
 podrá ser mediante un teclado (escrita), o a través de la voz utilizando
@@ -35,7 +37,7 @@ decir que el lenguaje utilizado para crear el bot ha sido el inglés
 debido a que la API utilizada para la búsqueda de recetas así lo
 requeria.
 
-ChefBot {#chefbot .unnumbered}
+ChefBot
 =======
 
 Para la realización de nuestro ayudante en la cocina, nuestro búscador
@@ -44,12 +46,12 @@ nuestro *bot* en la plataforma que DialogFlow nos proporciona, y por
 otra, la lógica de nuestra interfaz desarrollada en Python que nos sirve
 de pasarela con nuestro *bot* mencionado.
 
-DialogFlow {#dialogflow .unnumbered}
+DialogFlow
 ----------
 
 Previamente a la inserción de los datos en sí en la herramienta de
 DialogFlow, hemos realizado un diagrama de como debería ser el flujo de
-interacción de los usuarios con nuestro *chatbot* \[fig:diagrama\]. En
+interacción de los usuarios con nuestro *chatbot*. En
 dicho diagrama, cada nodo representa una conexión entre lo que el
 usuario dice y que acción debería ser tomada por nuestro *chatbot*,
 conocido como *Intents*. Cada *Intent* tiene un *Context* de entrada
@@ -57,7 +59,8 @@ conocido como *Intents*. Cada *Intent* tiene un *Context* de entrada
 o contexto de la conversación. Además utilizaremos este contexto para
 conocer cuales son los ingredientes y/o tipo de recetas que el usuario
 esta buscando, así como cuando el *chatbot* emita el contexto *finish*
-finalizar la conversación.\
+finalizar la conversación.
+
 Por otra parte contamos con las *Entities* que nos permiten manejar los
 “conceptos" proporcionandole ejemplos de estos. En nuestro diagrama
 estan representados mediante *@entitie* y nos sirven de enlaces entre
@@ -65,10 +68,9 @@ los *Intents*. Por ejemplo la *entitie* @type representa el concepto de
 tipo de comida y a DialogFlow le hemos suministrado una serie de
 ejemplos cómo pueden ser: pizzas, snacks o salads.
 
-![Diagrama de Flujo<span
-data-label="fig:diagrama"></span>](pics/diagrama)
+![Diagrama](diagrama.png)
 
-Lógica con Python {#lógica-con-python .unnumbered}
+Lógica con Python
 -----------------
 
 Una vez definido nuestro *chatbot* nos falta crear algún medio por el
@@ -97,14 +99,9 @@ que este nos proporciona, realizaremos en bucle una serie de
 intercambios de mensajes entre el usuario y el servicio de forma que
 cuando tengamos la información necesaria, a través de una tercera API
 que nos permite búscar recetas le proporcionaremos al usuario la receta
-que estaba búscando, y si esta satisfecho, nuestro servicio terminará.\
+que estaba búscando, y si esta satisfecho, nuestro servicio terminará.
+
 Mencionar que también hemos utilizado la “Google Cloud Speech API" para
 ser capaces de capturar audio online a través de un microfono y pasarlo
 a texto para, a su vez, comunicar dicho texto a nuestro servicio y
 generar el comportamiento previamente expuesto.
-
-<span>0.48</span> ![Test Bot with Speech<span
-data-label="fig:resBotSpeech1"></span>](pics/textBot1 "fig:")
-
-<span>0.48</span> ![Test Bot with Speech<span
-data-label="fig:resBotSpeech1"></span>](pics/speechBot1 "fig:")
