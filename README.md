@@ -106,5 +106,8 @@ ser capaces de capturar audio online a través de un microfono y pasarlo
 a texto para, a su vez, comunicar dicho texto a nuestro servicio y
 generar el comportamiento previamente expuesto.
 
+Los resultados obtenidos cuando hemos utilizado la versión en la que se requiere interacturar por micrófono han sido:
 ![Results Speech](https://github.com/MarioProjects/ChefBot/blob/master/speechBot1.PNG)
+
+Mientras que resultados obtenidos cuando hemos utilizado la versión en la que se requiere interacturar escribiendo han sido:
 ![Results Text](https://github.com/MarioProjects/ChefBot/blob/master/textBot2.PNG)
