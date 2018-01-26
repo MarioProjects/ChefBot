@@ -1,11 +1,11 @@
 ---
 author:
-...
+ 
     *Mario Parreño Lara*\
     Universidad Politécnica de Valencia
-...
 
-Introducción {#introducción .unnumbered}
+
+Introducción
 ============
 
 *“Actualmente, las tareas que realizan estos bots son sumamente
@@ -68,7 +68,7 @@ los *Intents*. Por ejemplo la *entitie* @type representa el concepto de
 tipo de comida y a DialogFlow le hemos suministrado una serie de
 ejemplos cómo pueden ser: pizzas, snacks o salads.
 
-![Diagrama](diagrama.png)
+![Diagrama](https://github.com/MarioProjects/ChefBot/blob/master/diagrama.jpg)
 
 Lógica con Python
 -----------------
