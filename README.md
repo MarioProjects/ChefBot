@@ -105,3 +105,6 @@ Mencionar que también hemos utilizado la “Google Cloud Speech API" para
 ser capaces de capturar audio online a través de un microfono y pasarlo
 a texto para, a su vez, comunicar dicho texto a nuestro servicio y
 generar el comportamiento previamente expuesto.
+
+![Results Speech](https://github.com/MarioProjects/ChefBot/blob/master/speechBot1.PNG)
+![Results Text](https://github.com/MarioProjects/ChefBot/blob/master/textBot2.PNG)
