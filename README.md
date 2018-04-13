@@ -108,6 +108,5 @@ Mientras que resultados obtenidos cuando hemos utilizado la versión en la que s
 ![Results Text](https://github.com/MarioProjects/ChefBot/blob/master/textBot2.PNG)
 
 
-#### Author
- 
-    Mario Parreño 
+## Author
+ - Mario Parreño 
