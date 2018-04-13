@@ -110,5 +110,5 @@ Mientras que resultados obtenidos cuando hemos utilizado la versión en la que s
 ---
 author:
  
-    *Mario Parreño Lara*\
+    Mario Parreño Lara
     Universidad Politécnica de Valencia
